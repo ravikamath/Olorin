@@ -1,5 +1,7 @@
+/.vs/
 /Application/
 Debug/
 Release/
 *.sdf
+*.opensdf
 *.vcxproj.user
