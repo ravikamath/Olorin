@@ -11,15 +11,15 @@ namespace Olorin
 		class DLLAPI Plane
 		{
 		private:
-			Vector3 point;
+			Vector3 position;
 			Vector3 normal;
 		public:
 			Plane(const Vector3& point, const Vector3& normal);
 
-			void setPoint(const Vector3& point);
+			void setPosition(const Vector3& position);
 			void setNormal(const Vector3& normal);
 
-			const Vector3& getPoint() const;
+			const Vector3& getPosition() const;
 			const Vector3& getNormal() const;
 			// Find the point on the plane nearest to the argument
 			const Vector3 project(const Vector3& point) const;
