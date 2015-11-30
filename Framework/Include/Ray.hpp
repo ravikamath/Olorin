@@ -13,7 +13,6 @@ namespace Olorin
 			Vector3 position;
 			Vector3 direction;
 		public:
-			Ray();
 			Ray(const Vector3& position, const Vector3& direction);
 
 			const Vector3& getPosition() const;

@@ -14,7 +14,7 @@ namespace Olorin
 			Vector3 position;
 			Vector3 normal;
 		public:
-			Plane(const Vector3& point, const Vector3& normal);
+			Plane(const Vector3& position, const Vector3& normal);
 
 			void setPosition(const Vector3& position);
 			void setNormal(const Vector3& normal);
