@@ -22,7 +22,7 @@ namespace Olorin
 			static const Vector4 UnitZ;             // (0, 0, 1, 0)
 			static const Vector4 UnitW;             // (0, 0, 0, 1)
 
-													// Constructors
+			// Constructors
 			Vector4();
 			Vector4(const Vector3& source, const float& w = 1);
 			Vector4(const Vector4& source);
@@ -71,3 +71,4 @@ namespace Olorin
 }
 
 #endif
+

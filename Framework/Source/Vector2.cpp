@@ -10,6 +10,12 @@ namespace Olorin
 			coords[0] = coords[1] = 0;
 		}
 
+		Vector2::Vector2(const Vector2& source)
+		{
+			coords[0] = source.coords[0];
+			coords[1] = source.coords[1];
+		}
+
 		Vector2::Vector2(const float& x, const float& y)
 		{
 			coords[0] = x;

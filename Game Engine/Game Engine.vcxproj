@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{006986E4-13BE-45C5-BFF6-0DD1BC7B8A35}</ProjectGuid>
-    <RootNamespace>Framework</RootNamespace>
+    <ProjectGuid>{AD9038A4-999F-4629-9DC8-86D5FCA4A85E}</ProjectGuid>
+    <RootNamespace>GameEngine</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -28,6 +28,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -68,16 +69,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>Include;$(IncludePath)</IncludePath>
+    <IncludePath>Include;../Framework/Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>Include;$(IncludePath)</IncludePath>
+    <IncludePath>Include;../Framework/Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>Include;$(IncludePath)</IncludePath>
+    <IncludePath>Include;../Framework/Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>Include;$(IncludePath)</IncludePath>
+    <IncludePath>Include;../Framework/Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -128,27 +129,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Include\Colour.hpp" />
-    <ClInclude Include="Include\DLL.hpp" />
-    <ClInclude Include="Include\Plane.hpp" />
-    <ClInclude Include="Include\Triangle.hpp" />
-    <ClInclude Include="Include\Vector.hpp" />
-    <ClInclude Include="Include\Matrix4.hpp" />
-    <ClInclude Include="Include\Quaternion.hpp" />
-    <ClInclude Include="Include\Ray.hpp" />
-    <ClInclude Include="Include\Vector2.hpp" />
-    <ClInclude Include="Include\Vector3.hpp" />
-    <ClInclude Include="Include\Vector4.hpp" />
+    <ClInclude Include="Include\Transform.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Matrix4.cpp" />
-    <ClCompile Include="Source\Plane.cpp" />
-    <ClCompile Include="Source\Quaternion.cpp" />
-    <ClCompile Include="Source\Ray.cpp" />
-    <ClCompile Include="Source\Vector.cpp" />
-    <ClCompile Include="Source\Vector2.cpp" />
-    <ClCompile Include="Source\Vector3.cpp" />
-    <ClCompile Include="Source\Vector4.cpp" />
+    <ClCompile Include="Source\Transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework.vcxproj">
+      <Project>{006986e4-13be-45c5-bff6-0dd1bc7b8a35}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

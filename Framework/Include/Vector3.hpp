@@ -24,7 +24,7 @@ namespace Olorin
 			static const Vector3 UnitY;             // (0, 1, 0)
 			static const Vector3 UnitZ;             // (0, 0, 1)
 
-													// Constructors
+			// Constructors
 			Vector3();
 			Vector3(const Vector2& source);
 			Vector3(const Vector3& source);
@@ -100,7 +100,6 @@ namespace Olorin
 		DLLAPI const Vector3 operator -(const Vector3& lhs, const Vector3& rhs);
 		DLLAPI const Vector3 operator *(const Vector3& lhs, const Vector3& rhs);
 		DLLAPI const Vector3 operator *(const Vector3& lhs, const float& rhs);
-		DLLAPI const Vector3 operator +(const float& lhs, const Vector3& rhs);
 
 		// Input/Output
 		DLLAPI std::ostream& operator <<(std::ostream& lhs, const Vector3& rhs);
