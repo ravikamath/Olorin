@@ -43,6 +43,7 @@ namespace Olorin
 			const Quaternion getRotation() const;
 			const Vector3 getScale() const;
 			Transform* getParent() const;
+			const Matrix4& getWorld() const;
 
 			const Vector3 getForward() const;
 			const Vector3 getBackward() const;

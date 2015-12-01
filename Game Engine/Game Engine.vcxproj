@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Include\DLL.hpp" />
     <ClInclude Include="Include\Transform.hpp" />
   </ItemGroup>
   <ItemGroup>

@@ -10,8 +10,8 @@ namespace Olorin
 		class DLLAPI Quaternion
 		{
 		private:
-			float real;                     // The real part
-			Vector3 imaginary;      // The imaginary part
+			float real;		// The real part
+			Vector3 imaginary;	// The imaginary part
 		public:
 			static const Quaternion Identity;
 

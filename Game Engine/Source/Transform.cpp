@@ -51,10 +51,9 @@ namespace Olorin
 				//localScale = getScale();
 				// remove from children list of parent
 			}
-			this->parent = parent;
-			if (this->parent != NULL)
+			if ((this->parent = parent) != NULL)
 			{
-				// add from children list of parent
+				// add to children list of parent
 			}
 			update();
 		}
@@ -72,6 +71,11 @@ namespace Olorin
 		const Vector3& Transform::getLocalScale() const
 		{
 			return localScale;
+		}
+
+		const Matrix4& Transform::getWorld() const
+		{
+			return world;
 		}
 
 		void Transform::update()
