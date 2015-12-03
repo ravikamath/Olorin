@@ -11,7 +11,7 @@ namespace Olorin
 		{
 			nearClipPlane = 0.1f;
 			farClipPlane = 1000.0f;
-			fieldOfView = M_PI_2;
+			fieldOfView = float(M_PI_2);
 			aspectRatio = 4 / 3.0f;
 			//aspectRatio = GraphicsDevice::getViewport().getAspectRatio();
 

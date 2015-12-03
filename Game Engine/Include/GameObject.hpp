@@ -13,6 +13,7 @@ namespace Olorin
 	namespace GameEngine
 	{
 		class GAMEENGINE_DLL Component;
+		template class GAMEENGINE_DLL list<Component*>;
 
 		class GAMEENGINE_DLL GameObject
 		{

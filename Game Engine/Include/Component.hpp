@@ -15,8 +15,8 @@ namespace Olorin
 		protected:
 			GameObject* gameObject;
 		public:
-			Component(GameObject*);
-			~Component();
+			Component(GameObject*) {};
+			virtual ~Component() {};
 
 			Transform* getTransform() const;
 			GameObject* getGameObject() const;
