@@ -129,7 +129,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Include\Camera.hpp" />
+    <ClInclude Include="Include\Component.hpp" />
     <ClInclude Include="Include\DLL.hpp" />
+    <ClInclude Include="Include\GameObject.hpp" />
     <ClInclude Include="Include\Transform.hpp" />
   </ItemGroup>
   <ItemGroup>

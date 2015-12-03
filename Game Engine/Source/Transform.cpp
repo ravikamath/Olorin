@@ -18,11 +18,12 @@ namespace Olorin
 
 		Transform::~Transform()
 		{
-			//if I have children remove their parents
-			// for
-			// child.parent = NULL;
+			for each (Transform* child in children)
+			{
+				child->parent = NULL;
+				child->update();
+			}
 		}
-
 
 		void Transform::setLocalPosition(const Vector3& localPosition)
 		{
@@ -42,18 +43,27 @@ namespace Olorin
 			update();
 		}
 
-		void Transform::setParent(Transform* parent)
+		void Transform::setParent(Transform* parent, const bool& global)
 		{
+			if (this->parent == parent)
+				return;
 			if (this->parent != NULL)
 			{
-				//localPosition = getPosition();
-				//localRotation = getRotation();
-				//localScale = getScale();
-				// remove from children list of parent
+				if (global)
+				{
+					//localPosition = getPosition();
+					//localRotation = getRotation();
+					//localScale = getScale();
+				}
+				parent->children.remove(this);
 			}
 			if ((this->parent = parent) != NULL)
 			{
-				// add to children list of parent
+				if (global)
+				{
+					// Set the position, rotation, scale
+				}
+				parent->children.push_back(this);
 			}
 			update();
 		}

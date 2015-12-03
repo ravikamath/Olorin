@@ -4,7 +4,7 @@
 #include <Vector3.hpp>
 #include <Quaternion.hpp>
 #include <Matrix4.hpp>
-#include <vector>
+#include <list>
 
 using namespace Olorin::Framework;
 using namespace std;
@@ -14,7 +14,7 @@ namespace Olorin
 	namespace GameEngine
 	{
 		class DLLAPI Transform;
-		template class DLLAPI vector<Transform*>;
+		template class DLLAPI list<Transform*>;
 
 		class DLLAPI Transform
 		{
@@ -24,7 +24,7 @@ namespace Olorin
 			Vector3 localScale;
 			Matrix4 world;
 			Transform* parent;
-			vector<Transform*> children;
+			list<Transform*> children;
 
 			void update();
 		public:
@@ -34,7 +34,7 @@ namespace Olorin
 			void setLocalPosition(const Vector3& localPosition);
 			void setLocalRotation(const Quaternion& localRotation);
 			void setLocalScale(const Vector3& localScale);
-			void setParent(Transform*);
+			void setParent(Transform* parent, const bool& global = false);
 
 			const Vector3& getLocalPosition() const;
 			const Quaternion& getLocalRotation() const;

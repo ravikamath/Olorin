@@ -18,8 +18,8 @@ namespace Olorin
 			Component(GameObject*);
 			~Component();
 
-			const Transform* getTransform() const;
-			const GameObject* getGameObject() const;
+			Transform* getTransform() const;
+			GameObject* getGameObject() const;
 		};
 	}
 }
