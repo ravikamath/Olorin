@@ -25,12 +25,19 @@ namespace Olorin
 
 			// Accessors
 			float* getElements();
+			const Vector3 getForward() const;
+			const Vector3 getBackward() const;
+			const Vector3 getUp() const;
+			const Vector3 getDown() const;
+			const Vector3 getRight() const;
+			const Vector3 getLeft() const;
 
 			// Mutators
 			void setElements(const float* elements);
 
 			// Operators
 			float& operator [](const int& index);
+			const float& operator [](const int& index) const;
 			float& operator ()(const int& col, const int& row);
 			const float& operator ()(const int& col, const int& row) const;
 			const Matrix4& operator =(const Matrix4& rhs);

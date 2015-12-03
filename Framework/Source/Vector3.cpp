@@ -339,6 +339,12 @@ namespace Olorin
 		const Vector3 Vector3::UnitY(0, 1, 0);
 		const Vector3 Vector3::UnitZ(0, 0, 1);
 		const Vector3 Vector3::One(1, 1, 1);
+		const Vector3 Vector3::Forward(0, 0, 1);
+		const Vector3 Vector3::Backward(0, 0, -1);
+		const Vector3 Vector3::Right(1, 0, 0);
+		const Vector3 Vector3::Left(-1, 0, 0);
+		const Vector3 Vector3::Up(0, 1, 0);
+		const Vector3 Vector3::Down(0, -1, 0);
 
 		// Free Mathematical operators
 		const Vector3 operator +(const Vector3& lhs, const Vector3& rhs)

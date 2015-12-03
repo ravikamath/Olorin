@@ -15,11 +15,11 @@ namespace Olorin
 		protected:
 			GameObject* gameObject;
 		public:
-			Component(GameObject*) {};
-			virtual ~Component() {};
+			Component(GameObject* gameObject);
+			virtual ~Component();
 
-			Transform* getTransform() const;
-			GameObject* getGameObject() const;
+			Transform* getTransform();
+			GameObject* getGameObject();
 		};
 	}
 }

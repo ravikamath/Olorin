@@ -23,10 +23,13 @@ namespace Olorin
 		}
 
 		// Accessors
-		float* Matrix4::getElements()
-		{
-			return elements;
-		}
+		float* Matrix4::getElements() { return elements; }
+		const Vector3 Matrix4::getForward() const { return (*this) * Vector3::Forward; }
+		const Vector3 Matrix4::getBackward() const { return (*this) * Vector3::Backward; }
+		const Vector3 Matrix4::getRight() const { return (*this) * Vector3::Right; }
+		const Vector3 Matrix4::getLeft() const { return (*this) * Vector3::Left; }
+		const Vector3 Matrix4::getUp() const { return (*this) * Vector3::Up; }
+		const Vector3 Matrix4::getDown() const { return (*this) * Vector3::Down; }
 
 		// Mutators
 		void Matrix4::setElements(const float* elements)
@@ -37,6 +40,11 @@ namespace Olorin
 
 		// Operators - Mathematical
 		float& Matrix4::operator [](const int& index)
+		{
+			return elements[index];
+		}
+
+		const float& Matrix4::operator [](const int& index) const
 		{
 			return elements[index];
 		}

@@ -9,7 +9,8 @@ namespace Olorin
 	{
 		class GAMEENGINE_DLL Viewport
 		{
-
+		public:
+			const float getAspectRatio() const;
 		};
 	}
 }
