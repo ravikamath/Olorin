@@ -7,7 +7,7 @@ namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Quaternion
+		class FRAMEWORK_DLL Quaternion
 		{
 		private:
 			float real;		// The real part
@@ -36,9 +36,9 @@ namespace Olorin
 			static const Quaternion createFromAxisAngle(const Vector3& axis, const float& angle);
 		};
 
-		DLLAPI const Quaternion operator +(const Quaternion& lhs, const Quaternion& rhs);
-		DLLAPI const Quaternion operator -(const Quaternion& lhs, const Quaternion& rhs);
-		DLLAPI const Quaternion operator *(const Quaternion& lhs, const Quaternion& rhs);
+		FRAMEWORK_DLL const Quaternion operator +(const Quaternion& lhs, const Quaternion& rhs);
+		FRAMEWORK_DLL const Quaternion operator -(const Quaternion& lhs, const Quaternion& rhs);
+		FRAMEWORK_DLL const Quaternion operator *(const Quaternion& lhs, const Quaternion& rhs);
 	}
 }
 

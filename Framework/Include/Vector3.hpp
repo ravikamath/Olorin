@@ -8,11 +8,11 @@ namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Vector2;
-		class DLLAPI Vector4;
-		class DLLAPI Matrix4;
+		class FRAMEWORK_DLL Vector2;
+		class FRAMEWORK_DLL Vector4;
+		class FRAMEWORK_DLL Matrix4;
 
-		class DLLAPI Vector3 : public Vector
+		class FRAMEWORK_DLL Vector3 : public Vector
 		{
 		private:
 			float coords[3];
@@ -96,14 +96,14 @@ namespace Olorin
 		};
 
 		// Free operators
-		DLLAPI const Vector3 operator +(const Vector3& lhs, const Vector3& rhs);
-		DLLAPI const Vector3 operator -(const Vector3& lhs, const Vector3& rhs);
-		DLLAPI const Vector3 operator *(const Vector3& lhs, const Vector3& rhs);
-		DLLAPI const Vector3 operator *(const Vector3& lhs, const float& rhs);
+		FRAMEWORK_DLL const Vector3 operator +(const Vector3& lhs, const Vector3& rhs);
+		FRAMEWORK_DLL const Vector3 operator -(const Vector3& lhs, const Vector3& rhs);
+		FRAMEWORK_DLL const Vector3 operator *(const Vector3& lhs, const Vector3& rhs);
+		FRAMEWORK_DLL const Vector3 operator *(const Vector3& lhs, const float& rhs);
 
 		// Input/Output
-		DLLAPI std::ostream& operator <<(std::ostream& lhs, const Vector3& rhs);
-		DLLAPI std::istream& operator >>(std::istream& lhs, Vector3& rhs);
+		FRAMEWORK_DLL std::ostream& operator <<(std::ostream& lhs, const Vector3& rhs);
+		FRAMEWORK_DLL std::istream& operator >>(std::istream& lhs, Vector3& rhs);
 	}
 }
 

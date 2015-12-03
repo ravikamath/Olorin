@@ -1,7 +1,6 @@
 #ifndef __OLORIN_GAMEOBJECT__
 #define __OLORIN_GAMEOBJECT__
 
-#include <DLL.hpp>
 #include <Transform.hpp>
 #include <Matrix4.hpp>
 #include <list>
@@ -13,9 +12,9 @@ namespace Olorin
 {
 	namespace GameEngine
 	{
-		class DLLAPI Component;
+		class GAMEENGINE_DLL Component;
 
-		class DLLAPI GameObject
+		class GAMEENGINE_DLL GameObject
 		{
 		private:
 			Transform* transform;

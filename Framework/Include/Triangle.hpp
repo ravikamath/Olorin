@@ -7,7 +7,7 @@ namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Triangle
+		class FRAMEWORK_DLL Triangle
 		{
 		private:
 			Vector3 vertices[3];
@@ -18,6 +18,7 @@ namespace Olorin
 			const Vector3 getNormal() const;
 			const Vector3 getCircumCenter() const;
 			const Vector3 getInCenter() const;
+			const Vector3 getCentroid() const;
 			const float getCircumRadius() const;
 			const float getInRadius() const;
 

@@ -3,13 +3,13 @@
 #ifndef __OLORIN_IVECTOR__
 #define __OLORIN_IVECTOR__
 
-#include <DLL.hpp>
+#include <FrameworkDLL.hpp>
 
 namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Vector
+		class FRAMEWORK_DLL Vector
 		{
 		public:
 			virtual void setValue(const int& index, const float& value) = 0;

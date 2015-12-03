@@ -8,7 +8,7 @@ namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Plane
+		class FRAMEWORK_DLL Plane
 		{
 		private:
 			Vector3 position;

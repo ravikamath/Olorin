@@ -1,6 +1,7 @@
 #ifndef __OLORIN_TRANSFORM__
 #define __OLORIN_TRANSFORM__
 
+#include <GameEngineDLL.hpp>
 #include <Vector3.hpp>
 #include <Quaternion.hpp>
 #include <Matrix4.hpp>
@@ -13,10 +14,10 @@ namespace Olorin
 {
 	namespace GameEngine
 	{
-		class DLLAPI Transform;
-		template class DLLAPI list<Transform*>;
+		class GAMEENGINE_DLL Transform;
+		template class GAMEENGINE_DLL list<Transform*>;
 
-		class DLLAPI Transform
+		class GAMEENGINE_DLL Transform
 		{
 		private:
 			Vector3 localPosition;

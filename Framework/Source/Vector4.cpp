@@ -200,27 +200,27 @@ namespace Olorin
 		}
 
 		// Free operators
-		DLLAPI const Vector4 operator +(const Vector4& lhs, const Vector4& rhs)
+		FRAMEWORK_DLL const Vector4 operator +(const Vector4& lhs, const Vector4& rhs)
 		{
 			return Vector4(lhs) += rhs;
 		}
 
-		DLLAPI const Vector4 operator -(const Vector4& lhs, const Vector4& rhs)
+		FRAMEWORK_DLL const Vector4 operator -(const Vector4& lhs, const Vector4& rhs)
 		{
 			return Vector4(lhs) -= rhs;
 		}
 
-		DLLAPI const Vector4 operator *(const Vector4& lhs, const Vector4& rhs)
+		FRAMEWORK_DLL const Vector4 operator *(const Vector4& lhs, const Vector4& rhs)
 		{
 			return Vector4(lhs) *= rhs;
 		}
 
-		DLLAPI const Vector4 operator *(const float& lhs, const Vector4& rhs)
+		FRAMEWORK_DLL const Vector4 operator *(const float& lhs, const Vector4& rhs)
 		{
 			return Vector4(rhs) *= lhs;
 		}
 
-		DLLAPI const Vector4 operator *(const Vector4& lhs, const float& rhs)
+		FRAMEWORK_DLL const Vector4 operator *(const Vector4& lhs, const float& rhs)
 		{
 			return Vector4(lhs) *= rhs;
 		}

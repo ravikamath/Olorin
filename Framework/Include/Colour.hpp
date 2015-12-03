@@ -1,14 +1,14 @@
 #ifndef __OLORIN_COLOR__
 #define __OLORIN_COLOR__
 
-#include <DLL.hpp>
+#include <FrameworkDLL.hpp>
 #include <Vector3.hpp>
 
 namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Colour
+		class FRAMEWORK_DLL Colour
 		{
 		private:
 			unsigned char channels[4];

@@ -7,7 +7,7 @@ namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Vector2 : public Vector
+		class FRAMEWORK_DLL Vector2 : public Vector
 		{
 		private:
 			float coords[2];

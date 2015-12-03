@@ -7,7 +7,7 @@ namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Ray
+		class FRAMEWORK_DLL Ray
 		{
 		private:
 			Vector3 position;

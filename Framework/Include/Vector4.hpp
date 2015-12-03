@@ -7,9 +7,9 @@ namespace Olorin
 {
 	namespace Framework
 	{
-		class DLLAPI Vector3;
+		class FRAMEWORK_DLL Vector3;
 
-		class DLLAPI Vector4 : public Vector
+		class FRAMEWORK_DLL Vector4 : public Vector
 		{
 		private:
 			float coords[4];
@@ -62,11 +62,11 @@ namespace Olorin
 		};
 
 		// Free operators
-		DLLAPI const Vector4 operator +(const Vector4& lhs, const Vector4& rhs);
-		DLLAPI const Vector4 operator -(const Vector4& lhs, const Vector4& rhs);
-		DLLAPI const Vector4 operator *(const Vector4& lhs, const Vector4& rhs);
-		DLLAPI const Vector4 operator *(const float& lhs, const Vector4& rhs);
-		DLLAPI const Vector4 operator *(const Vector4& lhs, const float& rhs);
+		FRAMEWORK_DLL const Vector4 operator +(const Vector4& lhs, const Vector4& rhs);
+		FRAMEWORK_DLL const Vector4 operator -(const Vector4& lhs, const Vector4& rhs);
+		FRAMEWORK_DLL const Vector4 operator *(const Vector4& lhs, const Vector4& rhs);
+		FRAMEWORK_DLL const Vector4 operator *(const float& lhs, const Vector4& rhs);
+		FRAMEWORK_DLL const Vector4 operator *(const Vector4& lhs, const float& rhs);
 	}
 }
 

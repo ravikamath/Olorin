@@ -9,7 +9,7 @@ namespace Olorin
 	namespace Framework
 	{
 
-		class DLLAPI Matrix4
+		class FRAMEWORK_DLL Matrix4
 		{
 		private:
 			// Colum Major!
@@ -73,10 +73,10 @@ namespace Olorin
 				const float& nearPlane, const float& farPlane);
 		};
 
-		DLLAPI const Matrix4 operator +(const Matrix4& lhs, const Matrix4& rhs);
-		DLLAPI const Matrix4 operator -(const Matrix4& lhs, const Matrix4& rhs);
-		DLLAPI const Matrix4 operator *(const Matrix4& lhs, const float& rhs);
-		DLLAPI const Matrix4 operator *(const float& lhs, const Matrix4& rhs);
+		FRAMEWORK_DLL const Matrix4 operator +(const Matrix4& lhs, const Matrix4& rhs);
+		FRAMEWORK_DLL const Matrix4 operator -(const Matrix4& lhs, const Matrix4& rhs);
+		FRAMEWORK_DLL const Matrix4 operator *(const Matrix4& lhs, const float& rhs);
+		FRAMEWORK_DLL const Matrix4 operator *(const float& lhs, const Matrix4& rhs);
 	}
 }
 
