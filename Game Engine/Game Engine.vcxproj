@@ -138,8 +138,10 @@
     <ClInclude Include="Include\GameEngineDLL.hpp" />
     <ClInclude Include="Include\GameObject.hpp" />
     <ClInclude Include="Include\Transform.hpp" />
+    <ClInclude Include="Include\Viewport.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Camera.cpp" />
     <ClCompile Include="Source\GameObject.cpp" />
     <ClCompile Include="Source\Transform.cpp" />
   </ItemGroup>
