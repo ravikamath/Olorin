@@ -19,6 +19,7 @@ namespace Olorin
 			virtual ~Component();
 
 			Transform* getTransform();
+			const Transform* getTransform() const;
 			GameObject* getGameObject();
 		};
 	}

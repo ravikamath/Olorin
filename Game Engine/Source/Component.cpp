@@ -15,6 +15,7 @@ namespace Olorin
 		}
 
 		Transform* Component::getTransform() { return gameObject->getTransform(); }
+		const Transform* Component::getTransform() const { return gameObject->getTransform(); }
 		GameObject* Component::getGameObject() { return gameObject; }
 	}
 }

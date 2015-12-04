@@ -29,5 +29,16 @@ namespace Olorin
 		const float& Camera::getFieldOfView() const { return fieldOfView; }
 		const float& Camera::getAspectRatio() const { return aspectRatio; }
 		const Viewport& Camera::getViewport() const { return viewport; }
+
+		const Matrix4 Camera::getView() const
+		{
+			return Matrix4::createLookAt(getTransform()->getPosition(),
+				getTransform()->getForward(), getTransform()->getUp());
+		}
+
+		const Matrix4 Camera::getProjection() const
+		{
+			return Matrix4::createPerspective(fieldOfView, aspectRatio, nearClipPlane, farClipPlane);
+		}
 	}
 }

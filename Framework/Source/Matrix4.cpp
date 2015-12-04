@@ -129,15 +129,12 @@ namespace Olorin
 
 		void Matrix4::translate(const Vector3& position)
 		{
-			elements[12] += elements[15] * position[0];
-			elements[13] += elements[15] * position[1];
-			elements[14] += elements[15] * position[2];
+			*this = createTranslation(position) * *this;
 		}
 
-		void Matrix4::scale(const Vector3& position)
+		void Matrix4::scale(const Vector3& scale)
 		{
-			for (int index = 0; index < 12; index++)
-				elements[index] *= position[index / 4];
+			*this = createScale(scale) * *this;
 		}
 
 		void Matrix4::rotateAxisAngle(const Vector3& axis, const float& angle)
