@@ -137,6 +137,7 @@
     <ClInclude Include="Include\Component.hpp" />
     <ClInclude Include="Include\GameEngineDLL.hpp" />
     <ClInclude Include="Include\GameObject.hpp" />
+    <ClInclude Include="Include\Interfaces.hpp" />
     <ClInclude Include="Include\Transform.hpp" />
     <ClInclude Include="Include\Viewport.hpp" />
   </ItemGroup>
