@@ -68,25 +68,10 @@ namespace Olorin
 			update();
 		}
 
-		const Vector3& Transform::getLocalPosition() const
-		{
-			return localPosition;
-		}
-
-		const Vector3 Transform::getPosition() const
-		{
-			return Vector3(world[12], world[13], world[14]);
-		}
-
-		const Quaternion& Transform::getLocalRotation() const
-		{
-			return localRotation;
-		}
-
-		const Vector3& Transform::getLocalScale() const
-		{
-			return localScale;
-		}
+		const Vector3& Transform::getLocalPosition() const { return localPosition; }
+		const Vector3 Transform::getPosition() const { return Vector3(world[12], world[13], world[14]); }
+		const Quaternion& Transform::getLocalRotation() const { return localRotation; }
+		const Vector3& Transform::getLocalScale() const { return localScale; }
 
 		const Vector3 Transform::getForward() const { return world.getForward(); }
 		const Vector3 Transform::getBackward() const { return world.getBackward(); }
@@ -94,11 +79,7 @@ namespace Olorin
 		const Vector3 Transform::getLeft() const { return world.getLeft(); }
 		const Vector3 Transform::getUp() const { return world.getUp(); }
 		const Vector3 Transform::getDown() const { return world.getDown(); }
-
-		const Matrix4& Transform::getWorld() const
-		{
-			return world;
-		}
+		const Matrix4& Transform::getWorld() const { return world; }
 
 		void Transform::update()
 		{

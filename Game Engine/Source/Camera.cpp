@@ -23,12 +23,14 @@ namespace Olorin
 		void Camera::setFieldOfView(const float& value) { fieldOfView = value; }
 		void Camera::setAspectRatio(const float& value) { aspectRatio = value; }
 		void Camera::setViewport(const Viewport& value) { viewport = value; }
+		void Camera::setDepth(const float& value) { depth = value; }
 
 		const float& Camera::getNearClipPlane() const { return nearClipPlane; }
 		const float& Camera::getFarClipPlane() const { return farClipPlane; }
 		const float& Camera::getFieldOfView() const { return fieldOfView; }
 		const float& Camera::getAspectRatio() const { return aspectRatio; }
 		const Viewport& Camera::getViewport() const { return viewport; }
+		const float& Camera::getDepth() const { return depth; }
 
 		const Matrix4 Camera::getView() const
 		{

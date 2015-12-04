@@ -28,12 +28,14 @@ namespace Olorin
 			void setFieldOfView(const float& value);
 			void setAspectRatio(const float& value);
 			void setViewport(const Viewport& value);
+			void setDepth(const float& value);
 
 			const float& getNearClipPlane() const;
 			const float& getFarClipPlane() const;
 			const float& getFieldOfView() const;
 			const float& getAspectRatio() const;
 			const Viewport& getViewport() const;
+			const float& getDepth() const;
 
 			const Matrix4 getView() const;
 			const Matrix4 getProjection() const;

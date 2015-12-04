@@ -18,6 +18,7 @@ namespace Olorin
 		class GAMEENGINE_DLL GameObject
 		{
 		private:
+			//String name;
 			Transform* transform;
 			list<Component*> components;
 		public:
