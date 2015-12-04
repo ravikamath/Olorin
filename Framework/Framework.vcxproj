@@ -149,6 +149,7 @@
     <ClCompile Include="Source\Plane.cpp" />
     <ClCompile Include="Source\Quaternion.cpp" />
     <ClCompile Include="Source\Ray.cpp" />
+    <ClCompile Include="Source\Triangle.cpp" />
     <ClCompile Include="Source\Vector.cpp" />
     <ClCompile Include="Source\Vector2.cpp" />
     <ClCompile Include="Source\Vector3.cpp" />

@@ -21,6 +21,8 @@ namespace Olorin
 
 			void setPosition(const Vector3& position);
 			void setDirection(const Vector3& direction);
+
+			static const bool intersects(const Ray& lhs, const Ray& rhs, Vector3& result);
 		};
 	}
 }

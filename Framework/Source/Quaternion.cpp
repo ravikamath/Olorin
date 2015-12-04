@@ -50,7 +50,7 @@ namespace Olorin
 		const Quaternion& Quaternion::operator +=(const Quaternion& rhs)
 		{
 			this->real += rhs.real;
-			this->imaginary + rhs.imaginary;
+			this->imaginary += rhs.imaginary;
 			return *this;
 		}
 

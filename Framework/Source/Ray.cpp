@@ -37,6 +37,18 @@ namespace Olorin
 			this->direction = direction;
 		}
 
+		const bool Ray::intersects(const Ray& lhs, const Ray& rhs, Vector3& result)
+		{
+			Vector3 normal = lhs.getDirection() ^ rhs.getDirection();
+			float determinant = normal.getLengthSquared();
+			if (determinant == 0)
+				return false;
+			Vector3 location = rhs.getPosition() - lhs.getPosition();
+			result.setX((rhs.getDirection() ^ normal) % location / determinant);
+			result.setY((lhs.getDirection() ^ normal) % location / determinant);
+			result.setZ(0);
+			return true;
+		}
 
 	}
 }

@@ -2,6 +2,7 @@
 #define __OLORIN_TRIANGLE__
 
 #include <Vector3.hpp>
+#include <Plane.hpp>
 
 namespace Olorin
 {
@@ -22,9 +23,10 @@ namespace Olorin
 			const float getCircumRadius() const;
 			const float getInRadius() const;
 
-			//const Plane getPlane() const;
-			//const bool intersects(const Ray&) const;
+			const Plane getPlane() const;
+			const bool intersects(const Ray&) const;
 			//const bool intersects(const Plane&) const;
+			//const bool intersects(const Triangle&) const;
 			//const bool contains(const Vector3&) const;
 		};
 	}
