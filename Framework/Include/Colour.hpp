@@ -36,6 +36,9 @@ namespace Olorin
 			const Colour& operator *=(const Colour& rhs);
 			const Colour& operator +=(const Colour& rhs);
 			const Colour& operator -=(const Colour& rhs);
+
+			const Vector3 toVector3() const;
+			const Vector4 toVector4() const;
 		};
 
 		FRAMEWORK_DLL const Colour operator *(const Colour& lhs, const Colour& rhs);

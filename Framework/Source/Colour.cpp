@@ -100,5 +100,15 @@ namespace Olorin
 		{
 			return Colour(lhs) -= rhs;
 		}
+
+		const Vector3 Colour::toVector3() const
+		{
+			return Vector3(channels[0], channels[1], channels[2]) /= 255;
+		}
+
+		const Vector4 Colour::toVector4() const
+		{
+			return Vector4(channels[0], channels[1], channels[2], channels[3]) /= 255;
+		}
 	}
 }

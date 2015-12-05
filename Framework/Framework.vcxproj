@@ -147,6 +147,7 @@
     <ClInclude Include="Include\Vector4.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\BoundingBox.cpp" />
     <ClCompile Include="Source\Colour.cpp" />
     <ClCompile Include="Source\Matrix2.cpp" />
     <ClCompile Include="Source\Matrix4.cpp" />
