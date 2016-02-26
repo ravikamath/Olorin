@@ -122,8 +122,8 @@ namespace Olorin
 				return;
 				}
 			float trace = getTrace() / 2;
-			eigens[0] = trace - sqrt(trace * trace - determinant);
-			eigens[1] = trace + sqrt(trace * trace - determinant);
+			eigens[0] = float(trace - sqrt(trace * trace - determinant));
+			eigens[1] = float(trace + sqrt(trace * trace - determinant));
 			}
 		
 		const float Matrix2::getConditionNumber() const
@@ -136,9 +136,9 @@ namespace Olorin
 			float eigens[2] = {0, 0};
 			mTm.getEigenValues(eigens);
 			if(eigens[0] < eigens[1])
-				return sqrt(eigens[1] / eigens[0]);
+				return float(sqrt(eigens[1] / eigens[0]));
 			else
-				return sqrt(eigens[0] / eigens[1]);
+				return float(sqrt(eigens[0] / eigens[1]));
 			}
 		
 		const float Matrix2::getDeterminant() const

@@ -1,5 +1,6 @@
 #ifndef __OLORIN_TRANSFORM__
 #define __OLORIN_TRANSFORM__
+#pragma warning(disable: 4251)
 
 #include <GameEngineDLL.hpp>
 #include <Vector3.hpp>
@@ -15,7 +16,6 @@ namespace Olorin
 	namespace GameEngine
 	{
 		class GAMEENGINE_DLL Transform;
-		template class GAMEENGINE_DLL list<Transform*>;
 
 		class GAMEENGINE_DLL Transform
 		{
@@ -43,7 +43,7 @@ namespace Olorin
 			const Vector3 getPosition() const;
 			const Quaternion getRotation() const;
 			const Vector3 getScale() const;
-			Transform* getParent() const;
+			const Transform* getParent() const;
 			const Matrix4& getWorld() const;
 
 			const Vector3 getForward() const;

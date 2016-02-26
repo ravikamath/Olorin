@@ -52,8 +52,8 @@ namespace Olorin
 				if (global)
 				{
 					localPosition = getPosition();
-					//localRotation = getRotation();
-					//localScale = getScale();
+					localRotation = getRotation();
+					localScale = getScale();
 				}
 				parent->children.remove(this);
 			}
@@ -71,7 +71,11 @@ namespace Olorin
 		const Vector3& Transform::getLocalPosition() const { return localPosition; }
 		const Vector3 Transform::getPosition() const { return Vector3(world[12], world[13], world[14]); }
 		const Quaternion& Transform::getLocalRotation() const { return localRotation; }
+		const Quaternion Transform::getRotation() const { return Quaternion::Identity; /* not implemented*/ }
 		const Vector3& Transform::getLocalScale() const { return localScale; }
+		const Vector3 Transform::getScale() const { return Vector3::Zero; /* not implemented*/ }
+
+		const Transform* Transform::getParent() const { return parent; }
 
 		const Vector3 Transform::getForward() const { return world.getForward(); }
 		const Vector3 Transform::getBackward() const { return world.getBackward(); }

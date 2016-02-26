@@ -1,5 +1,6 @@
 #ifndef __OLORIN_GAMEOBJECT__
 #define __OLORIN_GAMEOBJECT__
+#pragma warning(disable: 4251)
 
 #include <Transform.hpp>
 #include <Matrix4.hpp>
@@ -13,7 +14,9 @@ namespace Olorin
 	namespace GameEngine
 	{
 		class GAMEENGINE_DLL Component;
-		template class GAMEENGINE_DLL list<Component*>;
+		class GAMEENGINE_DLL Camera;
+		class GAMEENGINE_DLL Light;
+		class GAMEENGINE_DLL Renderer;
 
 		class GAMEENGINE_DLL GameObject
 		{
@@ -26,12 +29,12 @@ namespace Olorin
 			~GameObject();
 
 			Transform* getTransform();
-			//Camera* getCamera();
-			//Light* getLight();
-			//Renderer* getRenderer();
+			Camera* getCamera(); // not implemented
+			Light* getLight(); // not implemented
+			Renderer* getRenderer(); // not implemented
 
-			template<class T> T add();
-			template<class T> T get();
+			template<class T> T* add();
+			template<class T> T* get();
 			template<class T> void remove();
 		};
 	}
